@@ -1,0 +1,1705 @@
+{
+  "attributes":
+  {
+    "absolutePath": "HelloWallet.sol",
+    "exportedSymbols":
+    {
+      "HelloWallet":
+      [
+        101
+      ]
+    }
+  },
+  "children":
+  [
+    {
+      "attributes":
+      {
+        "literals":
+        [
+          "ton",
+          "-",
+          "solidity",
+          ">=",
+          "0.35",
+          ".0"
+        ]
+      },
+      "id": 1,
+      "name": "PragmaDirective",
+      "src": "99:30:0"
+    },
+    {
+      "attributes":
+      {
+        "literals":
+        [
+          "AbiHeader",
+          "expire"
+        ]
+      },
+      "id": 2,
+      "name": "PragmaDirective",
+      "src": "130:24:0"
+    },
+    {
+      "attributes":
+      {
+        "abstract": false,
+        "baseContracts":
+        [
+          null
+        ],
+        "contractDependencies":
+        [
+          null
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "linearizedBaseContracts":
+        [
+          101
+        ],
+        "name": "HelloWallet",
+        "scope": 102
+      },
+      "children":
+      [
+        {
+          "attributes":
+          {
+            "constant": false,
+            "functionSelector": "b80777ea",
+            "name": "timestamp",
+            "overrides": null,
+            "scope": 101,
+            "stateVariable": true,
+            "type": "uint32",
+            "value": null,
+            "visibility": "public"
+          },
+          "children":
+          [
+            {
+              "attributes":
+              {
+                "name": "uint32",
+                "type": "uint32"
+              },
+              "id": 3,
+              "name": "ElementaryTypeName",
+              "src": "411:6:0"
+            }
+          ],
+          "id": 4,
+          "name": "VariableDeclaration",
+          "src": "411:23:0"
+        },
+        {
+          "attributes":
+          {
+            "documentation": null,
+            "implemented": true,
+            "isConstructor": true,
+            "kind": "constructor",
+            "modifiers":
+            [
+              null
+            ],
+            "name": "",
+            "overrides": null,
+            "scope": 101,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          "children":
+          [
+            {
+              "attributes":
+              {
+                "parameters":
+                [
+                  null
+                ]
+              },
+              "children": [],
+              "id": 5,
+              "name": "ParameterList",
+              "src": "721:2:0"
+            },
+            {
+              "attributes":
+              {
+                "parameters":
+                [
+                  null
+                ]
+              },
+              "children": [],
+              "id": 6,
+              "name": "ParameterList",
+              "src": "731:0:0"
+            },
+            {
+              "children":
+              [
+                {
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "argumentTypes": null,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "isStructConstructorCall": false,
+                        "lValueRequested": false,
+                        "names":
+                        [
+                          null
+                        ],
+                        "tryCall": false,
+                        "type": "tuple()",
+                        "type_conversion": false
+                      },
+                      "children":
+                      [
+                        {
+                          "attributes":
+                          {
+                            "argumentTypes":
+                            [
+                              {
+                                "typeIdentifier": "t_bool",
+                                "typeString": "bool"
+                              },
+                              {
+                                "typeIdentifier": "t_rational_101_by_1",
+                                "typeString": "int_const 101"
+                              }
+                            ],
+                            "overloadedDeclarations":
+                            [
+                              null
+                            ],
+                            "referencedDeclaration": -18,
+                            "type": "function () pure",
+                            "value": "require"
+                          },
+                          "id": 7,
+                          "name": "Identifier",
+                          "src": "792:7:0"
+                        },
+                        {
+                          "attributes":
+                          {
+                            "argumentTypes": null,
+                            "commonType":
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            },
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "operator": "!=",
+                            "type": "bool"
+                          },
+                          "children":
+                          [
+                            {
+                              "attributes":
+                              {
+                                "argumentTypes": null,
+                                "arguments":
+                                [
+                                  null
+                                ],
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "isStructConstructorCall": false,
+                                "lValueRequested": false,
+                                "names":
+                                [
+                                  null
+                                ],
+                                "tryCall": false,
+                                "type": "uint256",
+                                "type_conversion": false
+                              },
+                              "children":
+                              [
+                                {
+                                  "attributes":
+                                  {
+                                    "argumentTypes":
+                                    [
+                                      null
+                                    ],
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "member_name": "pubkey",
+                                    "referencedDeclaration": null,
+                                    "type": "function () pure returns (uint256)"
+                                  },
+                                  "children":
+                                  [
+                                    {
+                                      "attributes":
+                                      {
+                                        "argumentTypes": null,
+                                        "overloadedDeclarations":
+                                        [
+                                          null
+                                        ],
+                                        "referencedDeclaration": -101,
+                                        "type": "tvm",
+                                        "value": "tvm"
+                                      },
+                                      "id": 8,
+                                      "name": "Identifier",
+                                      "src": "800:3:0"
+                                    }
+                                  ],
+                                  "id": 9,
+                                  "name": "MemberAccess",
+                                  "src": "800:10:0"
+                                }
+                              ],
+                              "id": 10,
+                              "name": "FunctionCall",
+                              "src": "800:15:0"
+                            },
+                            {
+                              "attributes":
+                              {
+                                "argumentTypes": null,
+                                "hexvalue": "30",
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "lValueRequested": false,
+                                "subdenomination": null,
+                                "token": "number",
+                                "type": "int_const 0",
+                                "value": "0"
+                              },
+                              "id": 11,
+                              "name": "Literal",
+                              "src": "816:1:0"
+                            }
+                          ],
+                          "id": 12,
+                          "name": "BinaryOperation",
+                          "src": "800:17:0"
+                        },
+                        {
+                          "attributes":
+                          {
+                            "argumentTypes": null,
+                            "hexvalue": "313031",
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "subdenomination": null,
+                            "token": "number",
+                            "type": "int_const 101",
+                            "value": "101"
+                          },
+                          "id": 13,
+                          "name": "Literal",
+                          "src": "819:3:0"
+                        }
+                      ],
+                      "id": 14,
+                      "name": "FunctionCall",
+                      "src": "792:32:0"
+                    }
+                  ],
+                  "id": 15,
+                  "name": "ExpressionStatement",
+                  "src": "792:32:0"
+                },
+                {
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "argumentTypes": null,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "isStructConstructorCall": false,
+                        "lValueRequested": false,
+                        "names":
+                        [
+                          null
+                        ],
+                        "tryCall": false,
+                        "type": "tuple()",
+                        "type_conversion": false
+                      },
+                      "children":
+                      [
+                        {
+                          "attributes":
+                          {
+                            "argumentTypes":
+                            [
+                              {
+                                "typeIdentifier": "t_bool",
+                                "typeString": "bool"
+                              },
+                              {
+                                "typeIdentifier": "t_rational_102_by_1",
+                                "typeString": "int_const 102"
+                              }
+                            ],
+                            "overloadedDeclarations":
+                            [
+                              null
+                            ],
+                            "referencedDeclaration": -18,
+                            "type": "function () pure",
+                            "value": "require"
+                          },
+                          "id": 16,
+                          "name": "Identifier",
+                          "src": "966:7:0"
+                        },
+                        {
+                          "attributes":
+                          {
+                            "argumentTypes": null,
+                            "commonType":
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            },
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "operator": "==",
+                            "type": "bool"
+                          },
+                          "children":
+                          [
+                            {
+                              "attributes":
+                              {
+                                "argumentTypes": null,
+                                "arguments":
+                                [
+                                  null
+                                ],
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "isStructConstructorCall": false,
+                                "lValueRequested": false,
+                                "names":
+                                [
+                                  null
+                                ],
+                                "tryCall": false,
+                                "type": "uint256",
+                                "type_conversion": false
+                              },
+                              "children":
+                              [
+                                {
+                                  "attributes":
+                                  {
+                                    "argumentTypes":
+                                    [
+                                      null
+                                    ],
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "member_name": "pubkey",
+                                    "referencedDeclaration": null,
+                                    "type": "function () pure returns (uint256)"
+                                  },
+                                  "children":
+                                  [
+                                    {
+                                      "attributes":
+                                      {
+                                        "argumentTypes": null,
+                                        "overloadedDeclarations":
+                                        [
+                                          null
+                                        ],
+                                        "referencedDeclaration": -15,
+                                        "type": "msg",
+                                        "value": "msg"
+                                      },
+                                      "id": 17,
+                                      "name": "Identifier",
+                                      "src": "974:3:0"
+                                    }
+                                  ],
+                                  "id": 18,
+                                  "name": "MemberAccess",
+                                  "src": "974:10:0"
+                                }
+                              ],
+                              "id": 19,
+                              "name": "FunctionCall",
+                              "src": "974:15:0"
+                            },
+                            {
+                              "attributes":
+                              {
+                                "argumentTypes": null,
+                                "arguments":
+                                [
+                                  null
+                                ],
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "isStructConstructorCall": false,
+                                "lValueRequested": false,
+                                "names":
+                                [
+                                  null
+                                ],
+                                "tryCall": false,
+                                "type": "uint256",
+                                "type_conversion": false
+                              },
+                              "children":
+                              [
+                                {
+                                  "attributes":
+                                  {
+                                    "argumentTypes":
+                                    [
+                                      null
+                                    ],
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "member_name": "pubkey",
+                                    "referencedDeclaration": null,
+                                    "type": "function () pure returns (uint256)"
+                                  },
+                                  "children":
+                                  [
+                                    {
+                                      "attributes":
+                                      {
+                                        "argumentTypes": null,
+                                        "overloadedDeclarations":
+                                        [
+                                          null
+                                        ],
+                                        "referencedDeclaration": -101,
+                                        "type": "tvm",
+                                        "value": "tvm"
+                                      },
+                                      "id": 20,
+                                      "name": "Identifier",
+                                      "src": "990:3:0"
+                                    }
+                                  ],
+                                  "id": 21,
+                                  "name": "MemberAccess",
+                                  "src": "990:10:0"
+                                }
+                              ],
+                              "id": 22,
+                              "name": "FunctionCall",
+                              "src": "990:13:0"
+                            }
+                          ],
+                          "id": 23,
+                          "name": "BinaryOperation",
+                          "src": "974:29:0"
+                        },
+                        {
+                          "attributes":
+                          {
+                            "argumentTypes": null,
+                            "hexvalue": "313032",
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "subdenomination": null,
+                            "token": "number",
+                            "type": "int_const 102",
+                            "value": "102"
+                          },
+                          "id": 24,
+                          "name": "Literal",
+                          "src": "1004:3:0"
+                        }
+                      ],
+                      "id": 25,
+                      "name": "FunctionCall",
+                      "src": "966:43:0"
+                    }
+                  ],
+                  "id": 26,
+                  "name": "ExpressionStatement",
+                  "src": "966:43:0"
+                },
+                {
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "argumentTypes": null,
+                        "arguments":
+                        [
+                          null
+                        ],
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "isStructConstructorCall": false,
+                        "lValueRequested": false,
+                        "names":
+                        [
+                          null
+                        ],
+                        "tryCall": false,
+                        "type": "tuple()",
+                        "type_conversion": false
+                      },
+                      "children":
+                      [
+                        {
+                          "attributes":
+                          {
+                            "argumentTypes":
+                            [
+                              null
+                            ],
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "member_name": "accept",
+                            "referencedDeclaration": null,
+                            "type": "function () pure"
+                          },
+                          "children":
+                          [
+                            {
+                              "attributes":
+                              {
+                                "argumentTypes": null,
+                                "overloadedDeclarations":
+                                [
+                                  null
+                                ],
+                                "referencedDeclaration": -101,
+                                "type": "tvm",
+                                "value": "tvm"
+                              },
+                              "id": 27,
+                              "name": "Identifier",
+                              "src": "1240:3:0"
+                            }
+                          ],
+                          "id": 29,
+                          "name": "MemberAccess",
+                          "src": "1240:10:0"
+                        }
+                      ],
+                      "id": 30,
+                      "name": "FunctionCall",
+                      "src": "1240:13:0"
+                    }
+                  ],
+                  "id": 31,
+                  "name": "ExpressionStatement",
+                  "src": "1240:13:0"
+                },
+                {
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "argumentTypes": null,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "operator": "=",
+                        "type": "uint32"
+                      },
+                      "children":
+                      [
+                        {
+                          "attributes":
+                          {
+                            "argumentTypes": null,
+                            "overloadedDeclarations":
+                            [
+                              null
+                            ],
+                            "referencedDeclaration": 4,
+                            "type": "uint32",
+                            "value": "timestamp"
+                          },
+                          "id": 32,
+                          "name": "Identifier",
+                          "src": "1263:9:0"
+                        },
+                        {
+                          "attributes":
+                          {
+                            "argumentTypes": null,
+                            "overloadedDeclarations":
+                            [
+                              null
+                            ],
+                            "referencedDeclaration": -17,
+                            "type": "uint32",
+                            "value": "now"
+                          },
+                          "id": 33,
+                          "name": "Identifier",
+                          "src": "1275:3:0"
+                        }
+                      ],
+                      "id": 34,
+                      "name": "Assignment",
+                      "src": "1263:15:0"
+                    }
+                  ],
+                  "id": 35,
+                  "name": "ExpressionStatement",
+                  "src": "1263:15:0"
+                }
+              ],
+              "id": 36,
+              "name": "Block",
+              "src": "731:554:0"
+            }
+          ],
+          "id": 37,
+          "name": "FunctionDefinition",
+          "src": "710:575:0"
+        },
+        {
+          "attributes":
+          {
+            "documentation": null,
+            "implemented": true,
+            "isConstructor": false,
+            "kind": "function",
+            "modifiers":
+            [
+              null
+            ],
+            "name": "renderHelloWorld",
+            "overrides": null,
+            "scope": 101,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "public"
+          },
+          "children":
+          [
+            {
+              "attributes":
+              {
+                "parameters":
+                [
+                  null
+                ]
+              },
+              "children": [],
+              "id": 38,
+              "name": "ParameterList",
+              "src": "1317:2:0"
+            },
+            {
+              "children":
+              [
+                {
+                  "attributes":
+                  {
+                    "constant": false,
+                    "name": "",
+                    "overrides": null,
+                    "scope": 45,
+                    "stateVariable": false,
+                    "type": "string",
+                    "value": null,
+                    "visibility": "internal"
+                  },
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "name": "string",
+                        "type": "string"
+                      },
+                      "id": 39,
+                      "name": "ElementaryTypeName",
+                      "src": "1341:6:0"
+                    }
+                  ],
+                  "id": 40,
+                  "name": "VariableDeclaration",
+                  "src": "1341:6:0"
+                }
+              ],
+              "id": 41,
+              "name": "ParameterList",
+              "src": "1340:8:0"
+            },
+            {
+              "children":
+              [
+                {
+                  "attributes":
+                  {
+                    "functionReturnParameters": 41
+                  },
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "argumentTypes": null,
+                        "hexvalue": "68656c6c6f576f726c64",
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "subdenomination": null,
+                        "token": "string",
+                        "type": "literal_string \"helloWorld\"",
+                        "value": "helloWorld"
+                      },
+                      "id": 42,
+                      "name": "Literal",
+                      "src": "1366:12:0"
+                    }
+                  ],
+                  "id": 43,
+                  "name": "Return",
+                  "src": "1366:12:0"
+                }
+              ],
+              "id": 44,
+              "name": "Block",
+              "src": "1349:36:0"
+            }
+          ],
+          "id": 45,
+          "name": "FunctionDefinition",
+          "src": "1291:94:0"
+        },
+        {
+          "attributes":
+          {
+            "documentation": null,
+            "implemented": true,
+            "isConstructor": false,
+            "kind": "function",
+            "modifiers":
+            [
+              null
+            ],
+            "name": "touch",
+            "overrides": null,
+            "scope": 101,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          "children":
+          [
+            {
+              "attributes":
+              {
+                "parameters":
+                [
+                  null
+                ]
+              },
+              "children": [],
+              "id": 46,
+              "name": "ParameterList",
+              "src": "1471:2:0"
+            },
+            {
+              "attributes":
+              {
+                "parameters":
+                [
+                  null
+                ]
+              },
+              "children": [],
+              "id": 47,
+              "name": "ParameterList",
+              "src": "1483:0:0"
+            },
+            {
+              "children":
+              [
+                {
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "argumentTypes": null,
+                        "arguments":
+                        [
+                          null
+                        ],
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "isStructConstructorCall": false,
+                        "lValueRequested": false,
+                        "names":
+                        [
+                          null
+                        ],
+                        "tryCall": false,
+                        "type": "tuple()",
+                        "type_conversion": false
+                      },
+                      "children":
+                      [
+                        {
+                          "attributes":
+                          {
+                            "argumentTypes":
+                            [
+                              null
+                            ],
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "member_name": "accept",
+                            "referencedDeclaration": null,
+                            "type": "function () pure"
+                          },
+                          "children":
+                          [
+                            {
+                              "attributes":
+                              {
+                                "argumentTypes": null,
+                                "overloadedDeclarations":
+                                [
+                                  null
+                                ],
+                                "referencedDeclaration": -101,
+                                "type": "tvm",
+                                "value": "tvm"
+                              },
+                              "id": 48,
+                              "name": "Identifier",
+                              "src": "1646:3:0"
+                            }
+                          ],
+                          "id": 50,
+                          "name": "MemberAccess",
+                          "src": "1646:10:0"
+                        }
+                      ],
+                      "id": 51,
+                      "name": "FunctionCall",
+                      "src": "1646:13:0"
+                    }
+                  ],
+                  "id": 52,
+                  "name": "ExpressionStatement",
+                  "src": "1646:13:0"
+                },
+                {
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "argumentTypes": null,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "operator": "=",
+                        "type": "uint32"
+                      },
+                      "children":
+                      [
+                        {
+                          "attributes":
+                          {
+                            "argumentTypes": null,
+                            "overloadedDeclarations":
+                            [
+                              null
+                            ],
+                            "referencedDeclaration": 4,
+                            "type": "uint32",
+                            "value": "timestamp"
+                          },
+                          "id": 53,
+                          "name": "Identifier",
+                          "src": "1696:9:0"
+                        },
+                        {
+                          "attributes":
+                          {
+                            "argumentTypes": null,
+                            "overloadedDeclarations":
+                            [
+                              null
+                            ],
+                            "referencedDeclaration": -17,
+                            "type": "uint32",
+                            "value": "now"
+                          },
+                          "id": 54,
+                          "name": "Identifier",
+                          "src": "1708:3:0"
+                        }
+                      ],
+                      "id": 55,
+                      "name": "Assignment",
+                      "src": "1696:15:0"
+                    }
+                  ],
+                  "id": 56,
+                  "name": "ExpressionStatement",
+                  "src": "1696:15:0"
+                }
+              ],
+              "id": 57,
+              "name": "Block",
+              "src": "1483:235:0"
+            }
+          ],
+          "id": 58,
+          "name": "FunctionDefinition",
+          "src": "1457:261:0"
+        },
+        {
+          "attributes":
+          {
+            "documentation": null,
+            "implemented": true,
+            "isConstructor": false,
+            "kind": "function",
+            "modifiers":
+            [
+              null
+            ],
+            "name": "getTimestamp",
+            "overrides": null,
+            "scope": 101,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
+          },
+          "children":
+          [
+            {
+              "attributes":
+              {
+                "parameters":
+                [
+                  null
+                ]
+              },
+              "children": [],
+              "id": 59,
+              "name": "ParameterList",
+              "src": "1805:2:0"
+            },
+            {
+              "children":
+              [
+                {
+                  "attributes":
+                  {
+                    "constant": false,
+                    "name": "",
+                    "overrides": null,
+                    "scope": 66,
+                    "stateVariable": false,
+                    "type": "uint256",
+                    "value": null,
+                    "visibility": "internal"
+                  },
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "name": "uint",
+                        "type": "uint256"
+                      },
+                      "id": 60,
+                      "name": "ElementaryTypeName",
+                      "src": "1829:4:0"
+                    }
+                  ],
+                  "id": 61,
+                  "name": "VariableDeclaration",
+                  "src": "1829:4:0"
+                }
+              ],
+              "id": 62,
+              "name": "ParameterList",
+              "src": "1828:6:0"
+            },
+            {
+              "children":
+              [
+                {
+                  "attributes":
+                  {
+                    "functionReturnParameters": 62
+                  },
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "argumentTypes": null,
+                        "overloadedDeclarations":
+                        [
+                          null
+                        ],
+                        "referencedDeclaration": 4,
+                        "type": "uint32",
+                        "value": "timestamp"
+                      },
+                      "id": 63,
+                      "name": "Identifier",
+                      "src": "1852:9:0"
+                    }
+                  ],
+                  "id": 64,
+                  "name": "Return",
+                  "src": "1852:9:0"
+                }
+              ],
+              "id": 65,
+              "name": "Block",
+              "src": "1835:33:0"
+            }
+          ],
+          "id": 66,
+          "name": "FunctionDefinition",
+          "src": "1784:84:0"
+        },
+        {
+          "attributes":
+          {
+            "documentation": null,
+            "implemented": true,
+            "isConstructor": false,
+            "kind": "function",
+            "modifiers":
+            [
+              null
+            ],
+            "name": "sendValue",
+            "overrides": null,
+            "scope": 101,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
+          },
+          "children":
+          [
+            {
+              "children":
+              [
+                {
+                  "attributes":
+                  {
+                    "constant": false,
+                    "name": "dest",
+                    "overrides": null,
+                    "scope": 100,
+                    "stateVariable": false,
+                    "type": "address",
+                    "value": null,
+                    "visibility": "internal"
+                  },
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "name": "address",
+                        "type": "address"
+                      },
+                      "id": 67,
+                      "name": "ElementaryTypeName",
+                      "src": "1957:7:0"
+                    }
+                  ],
+                  "id": 68,
+                  "name": "VariableDeclaration",
+                  "src": "1957:12:0"
+                },
+                {
+                  "attributes":
+                  {
+                    "constant": false,
+                    "name": "amount",
+                    "overrides": null,
+                    "scope": 100,
+                    "stateVariable": false,
+                    "type": "uint128",
+                    "value": null,
+                    "visibility": "internal"
+                  },
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "name": "uint128",
+                        "type": "uint128"
+                      },
+                      "id": 69,
+                      "name": "ElementaryTypeName",
+                      "src": "1971:7:0"
+                    }
+                  ],
+                  "id": 70,
+                  "name": "VariableDeclaration",
+                  "src": "1971:14:0"
+                },
+                {
+                  "attributes":
+                  {
+                    "constant": false,
+                    "name": "bounce",
+                    "overrides": null,
+                    "scope": 100,
+                    "stateVariable": false,
+                    "type": "bool",
+                    "value": null,
+                    "visibility": "internal"
+                  },
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "name": "bool",
+                        "type": "bool"
+                      },
+                      "id": 71,
+                      "name": "ElementaryTypeName",
+                      "src": "1987:4:0"
+                    }
+                  ],
+                  "id": 72,
+                  "name": "VariableDeclaration",
+                  "src": "1987:11:0"
+                }
+              ],
+              "id": 73,
+              "name": "ParameterList",
+              "src": "1956:43:0"
+            },
+            {
+              "attributes":
+              {
+                "parameters":
+                [
+                  null
+                ]
+              },
+              "children": [],
+              "id": 74,
+              "name": "ParameterList",
+              "src": "2012:0:0"
+            },
+            {
+              "children":
+              [
+                {
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "argumentTypes": null,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "isStructConstructorCall": false,
+                        "lValueRequested": false,
+                        "names":
+                        [
+                          null
+                        ],
+                        "tryCall": false,
+                        "type": "tuple()",
+                        "type_conversion": false
+                      },
+                      "children":
+                      [
+                        {
+                          "attributes":
+                          {
+                            "argumentTypes":
+                            [
+                              {
+                                "typeIdentifier": "t_bool",
+                                "typeString": "bool"
+                              },
+                              {
+                                "typeIdentifier": "t_rational_102_by_1",
+                                "typeString": "int_const 102"
+                              }
+                            ],
+                            "overloadedDeclarations":
+                            [
+                              null
+                            ],
+                            "referencedDeclaration": -18,
+                            "type": "function () pure",
+                            "value": "require"
+                          },
+                          "id": 75,
+                          "name": "Identifier",
+                          "src": "2022:7:0"
+                        },
+                        {
+                          "attributes":
+                          {
+                            "argumentTypes": null,
+                            "commonType":
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            },
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "operator": "==",
+                            "type": "bool"
+                          },
+                          "children":
+                          [
+                            {
+                              "attributes":
+                              {
+                                "argumentTypes": null,
+                                "arguments":
+                                [
+                                  null
+                                ],
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "isStructConstructorCall": false,
+                                "lValueRequested": false,
+                                "names":
+                                [
+                                  null
+                                ],
+                                "tryCall": false,
+                                "type": "uint256",
+                                "type_conversion": false
+                              },
+                              "children":
+                              [
+                                {
+                                  "attributes":
+                                  {
+                                    "argumentTypes":
+                                    [
+                                      null
+                                    ],
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "member_name": "pubkey",
+                                    "referencedDeclaration": null,
+                                    "type": "function () pure returns (uint256)"
+                                  },
+                                  "children":
+                                  [
+                                    {
+                                      "attributes":
+                                      {
+                                        "argumentTypes": null,
+                                        "overloadedDeclarations":
+                                        [
+                                          null
+                                        ],
+                                        "referencedDeclaration": -15,
+                                        "type": "msg",
+                                        "value": "msg"
+                                      },
+                                      "id": 76,
+                                      "name": "Identifier",
+                                      "src": "2030:3:0"
+                                    }
+                                  ],
+                                  "id": 77,
+                                  "name": "MemberAccess",
+                                  "src": "2030:10:0"
+                                }
+                              ],
+                              "id": 78,
+                              "name": "FunctionCall",
+                              "src": "2030:15:0"
+                            },
+                            {
+                              "attributes":
+                              {
+                                "argumentTypes": null,
+                                "arguments":
+                                [
+                                  null
+                                ],
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "isStructConstructorCall": false,
+                                "lValueRequested": false,
+                                "names":
+                                [
+                                  null
+                                ],
+                                "tryCall": false,
+                                "type": "uint256",
+                                "type_conversion": false
+                              },
+                              "children":
+                              [
+                                {
+                                  "attributes":
+                                  {
+                                    "argumentTypes":
+                                    [
+                                      null
+                                    ],
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "member_name": "pubkey",
+                                    "referencedDeclaration": null,
+                                    "type": "function () pure returns (uint256)"
+                                  },
+                                  "children":
+                                  [
+                                    {
+                                      "attributes":
+                                      {
+                                        "argumentTypes": null,
+                                        "overloadedDeclarations":
+                                        [
+                                          null
+                                        ],
+                                        "referencedDeclaration": -101,
+                                        "type": "tvm",
+                                        "value": "tvm"
+                                      },
+                                      "id": 79,
+                                      "name": "Identifier",
+                                      "src": "2046:3:0"
+                                    }
+                                  ],
+                                  "id": 80,
+                                  "name": "MemberAccess",
+                                  "src": "2046:10:0"
+                                }
+                              ],
+                              "id": 81,
+                              "name": "FunctionCall",
+                              "src": "2046:13:0"
+                            }
+                          ],
+                          "id": 82,
+                          "name": "BinaryOperation",
+                          "src": "2030:29:0"
+                        },
+                        {
+                          "attributes":
+                          {
+                            "argumentTypes": null,
+                            "hexvalue": "313032",
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "subdenomination": null,
+                            "token": "number",
+                            "type": "int_const 102",
+                            "value": "102"
+                          },
+                          "id": 83,
+                          "name": "Literal",
+                          "src": "2060:3:0"
+                        }
+                      ],
+                      "id": 84,
+                      "name": "FunctionCall",
+                      "src": "2022:43:0"
+                    }
+                  ],
+                  "id": 85,
+                  "name": "ExpressionStatement",
+                  "src": "2022:43:0"
+                },
+                {
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "argumentTypes": null,
+                        "arguments":
+                        [
+                          null
+                        ],
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "isStructConstructorCall": false,
+                        "lValueRequested": false,
+                        "names":
+                        [
+                          null
+                        ],
+                        "tryCall": false,
+                        "type": "tuple()",
+                        "type_conversion": false
+                      },
+                      "children":
+                      [
+                        {
+                          "attributes":
+                          {
+                            "argumentTypes":
+                            [
+                              null
+                            ],
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "member_name": "accept",
+                            "referencedDeclaration": null,
+                            "type": "function () pure"
+                          },
+                          "children":
+                          [
+                            {
+                              "attributes":
+                              {
+                                "argumentTypes": null,
+                                "overloadedDeclarations":
+                                [
+                                  null
+                                ],
+                                "referencedDeclaration": -101,
+                                "type": "tvm",
+                                "value": "tvm"
+                              },
+                              "id": 86,
+                              "name": "Identifier",
+                              "src": "2074:3:0"
+                            }
+                          ],
+                          "id": 88,
+                          "name": "MemberAccess",
+                          "src": "2074:10:0"
+                        }
+                      ],
+                      "id": 89,
+                      "name": "FunctionCall",
+                      "src": "2074:13:0"
+                    }
+                  ],
+                  "id": 90,
+                  "name": "ExpressionStatement",
+                  "src": "2074:13:0"
+                },
+                {
+                  "children":
+                  [
+                    {
+                      "attributes":
+                      {
+                        "argumentTypes": null,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "isStructConstructorCall": false,
+                        "lValueRequested": false,
+                        "names":
+                        [
+                          null
+                        ],
+                        "tryCall": false,
+                        "type": "tuple()",
+                        "type_conversion": false
+                      },
+                      "children":
+                      [
+                        {
+                          "attributes":
+                          {
+                            "argumentTypes":
+                            [
+                              {
+                                "typeIdentifier": "t_uint128",
+                                "typeString": "uint128"
+                              },
+                              {
+                                "typeIdentifier": "t_bool",
+                                "typeString": "bool"
+                              },
+                              {
+                                "typeIdentifier": "t_rational_0_by_1",
+                                "typeString": "int_const 0"
+                              }
+                            ],
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "member_name": "transfer",
+                            "referencedDeclaration": null,
+                            "type": "function (uint128,bool,uint16,TvmCell,ExtraCurrencyCollection,TvmCell) pure"
+                          },
+                          "children":
+                          [
+                            {
+                              "attributes":
+                              {
+                                "argumentTypes": null,
+                                "overloadedDeclarations":
+                                [
+                                  null
+                                ],
+                                "referencedDeclaration": 68,
+                                "type": "address",
+                                "value": "dest"
+                              },
+                              "id": 91,
+                              "name": "Identifier",
+                              "src": "2160:4:0"
+                            }
+                          ],
+                          "id": 93,
+                          "name": "MemberAccess",
+                          "src": "2160:13:0"
+                        },
+                        {
+                          "attributes":
+                          {
+                            "argumentTypes": null,
+                            "overloadedDeclarations":
+                            [
+                              null
+                            ],
+                            "referencedDeclaration": 70,
+                            "type": "uint128",
+                            "value": "amount"
+                          },
+                          "id": 94,
+                          "name": "Identifier",
+                          "src": "2174:6:0"
+                        },
+                        {
+                          "attributes":
+                          {
+                            "argumentTypes": null,
+                            "overloadedDeclarations":
+                            [
+                              null
+                            ],
+                            "referencedDeclaration": 72,
+                            "type": "bool",
+                            "value": "bounce"
+                          },
+                          "id": 95,
+                          "name": "Identifier",
+                          "src": "2182:6:0"
+                        },
+                        {
+                          "attributes":
+                          {
+                            "argumentTypes": null,
+                            "hexvalue": "30",
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "subdenomination": null,
+                            "token": "number",
+                            "type": "int_const 0",
+                            "value": "0"
+                          },
+                          "id": 96,
+                          "name": "Literal",
+                          "src": "2190:1:0"
+                        }
+                      ],
+                      "id": 97,
+                      "name": "FunctionCall",
+                      "src": "2160:33:0"
+                    }
+                  ],
+                  "id": 98,
+                  "name": "ExpressionStatement",
+                  "src": "2160:33:0"
+                }
+              ],
+              "id": 99,
+              "name": "Block",
+              "src": "2012:187:0"
+            }
+          ],
+          "id": 100,
+          "name": "FunctionDefinition",
+          "src": "1938:261:0"
+        }
+      ],
+      "id": 101,
+      "name": "ContractDefinition",
+      "src": "208:1993:0"
+    }
+  ],
+  "id": 102,
+  "name": "SourceUnit",
+  "src": "99:2103:0"
+}

@@ -1,0 +1,32 @@
+{
+  "name": "ton-ast",
+  "version": "0.0.1",
+  "description": "Working with ton solidity ast tree",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest -i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freeton20/ton-ast.git"
+  },
+  "keywords": [
+    "AST",
+    "TON",
+    "FreeTON",
+    "Solidity"
+  ],
+  "author": "freeton20",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freeton20/ton-ast/issues"
+  },
+  "dependencies": {
+    "tondev": "github:freeton20/tondev#npm"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "jest": "^27.0.6"
+  },
+  "homepage": "https://github.com/freeton20/ton-ast#readme"
+}
