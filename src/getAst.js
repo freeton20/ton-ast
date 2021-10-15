@@ -2,7 +2,7 @@ const { controllers } = require('tondev');
 const path = require('path');
 const fs = require('fs');
 
-let t_out = '';
+let t_out = [];
 async function getAst(solFile) {
     const ext = path.extname(solFile);
     if (ext !== ".sol") {
@@ -18,9 +18,15 @@ async function getAst(solFile) {
     if (fs.existsSync(astFile)) {
         const ast = require(astFile);
         fs.unlink(astFile, () => { });
-        return ast;
+        return {
+            type: 'ast',
+            ast
+        }
     }
-    return t_out;
+    return {
+        type: 'error',
+        error: t_out
+    }
 }
 
 async function runCommand(command, args) {
@@ -37,9 +43,9 @@ function tondevTerminal() {
 
         },
         writeError: (text) => {
-            t_out = text;
+            !t_out.includes(text) && t_out.push(text);
         },
-        write: () => {
+        write: () => {            
         },
     };
 }
