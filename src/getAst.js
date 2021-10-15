@@ -16,7 +16,15 @@ async function getAst(solFile) {
     await runCommand(compileCommand, args);
     const astFile = path.resolve(__dirname, "temp", `${path.parse(args.file).name}.ast.json`);
     if (fs.existsSync(astFile)) {
-        const ast = require(astFile);
+        let ast = fs.readFileSync(astFile, "utf-8");
+        //if in sol file is import, ast isn`t valid. It has a few ast files. I need to have last of them
+        ast = ast.split("}{");
+        if(ast.length > 1){
+            ast = JSON.parse(`{${ast[ast.length-1]}`);
+        }else{
+            ast = JSON.parse(ast[0]);
+        }
+      //  fs.writeFileSync("/home/nikolai/ton-ast/src/__tests__/ast/testDebot.ast.json", ast);//for testing files
         fs.unlink(astFile, () => { });
         return {
             type: 'ast',
