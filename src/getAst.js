@@ -9,7 +9,7 @@ async function getAst(solFile) {
         terminal.log(`Choose solidity source file.`);
         return;
     }
-    const compileCommand = controllers[1].commands[2];
+    const compileCommand = controllers[1].commands[3];
     const args = [];
     args.file = solFile;
     args.outputDir = path.resolve(__dirname, 'temp');
@@ -24,7 +24,7 @@ async function getAst(solFile) {
         }else{
             ast = JSON.parse(ast[0]);
         }
-      //  fs.writeFileSync("/home/nikolai/ton-ast/src/__tests__/ast/testDebot.ast.json", ast);//for testing files
+     //  fs.writeFileSync("/home/nikolai/ton-ast/src/__tests__/ast/HelloWallet.ast.json", JSON.stringify(ast, 0, 4));//for testing files
         fs.unlink(astFile, () => { });
         return {
             type: 'ast',

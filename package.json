@@ -22,7 +22,7 @@
     "url": "https://github.com/freeton20/ton-ast/issues"
   },
   "dependencies": {
-    "tondev": "github:freeton20/tondev#npm"
+    "tondev": "github:freeton20/tondev#module"
   },
   "devDependencies": {
     "@types/jest": "^26.0.23",
