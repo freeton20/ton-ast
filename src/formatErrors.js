@@ -20,7 +20,7 @@ function getErrorFilePath(string) {
    return null;
 }
 
-function formatErrors(string) {
+function formatErrorsForVSCode(string) {
     if (!string) return;
 
     let arr = string.split("\n\n");
@@ -54,5 +54,5 @@ function formatErrors(string) {
     })
 }
 module.exports = {
-    formatErrors
+    formatErrorsForVSCode
 }
