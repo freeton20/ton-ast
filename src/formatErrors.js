@@ -42,7 +42,7 @@ function formatErrorsForVSCode(string) {
         let errorLenght = getErrorLenght(value[4]);
         let source = getErrorFilePath(value.join("\n"));
         return {
-            info: value.join('\n\n'),
+            info: value.join('\n'),
             coord: {
                 raw,
                 position
