@@ -26,7 +26,7 @@ async function getAst(solFile) {
             ast = JSON.parse(ast[0]);
         }
      //  fs.writeFileSync("/home/nikolai/ton-ast/src/__tests__/ast/HelloWallet.ast.json", JSON.stringify(ast, 0, 4));//for testing files
-        fs.unlink(astFile, () => { });
+       // fs.unlink(astFile, () => { });
         return {
             type: 'ast',
             ast
