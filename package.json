@@ -22,6 +22,7 @@
     "url": "https://github.com/freeton20/ton-ast/issues"
   },
   "dependencies": {
+    "soltar": "^2.0.6",
     "tondev": "github:freeton20/tondev#module"
   },
   "devDependencies": {

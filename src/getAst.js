@@ -1,6 +1,7 @@
 const { controllers } = require('tondev');
 const path = require('path');
 const fs = require('fs');
+const { formatErrors } = require("./formatErrors");
 
 let t_out = [];
 async function getAst(solFile) {
@@ -33,7 +34,7 @@ async function getAst(solFile) {
     }
     return {
         type: 'error',
-        error: t_out
+        error: formatErrors(t_out[0])
     }
 }
 

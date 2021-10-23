@@ -10,20 +10,10 @@ function getErrorLenght(errorString) {
     return errorStringCounter.length;
 }
 
-function getErrorFilePath(string) {
-    let filePath = string.match(/\s([\w\.\/]+\.sol):/);
-    if (filePath == null || !filePath[1]) return null;
-
-    if (fs.existsSync(filePath[1])) {
-        return filePath[1];
-    }
-   return null;
-}
-
-function formatErrorsForVSCode(string) {
-    if (!string) return;
-
-    let arr = string.split("\n\n");
+function formatErrors(error) {
+    if (!error) return;
+   
+    let arr = error.split("\n\n");    
 
     let a = arr.map(value => {
         return value.split("\n")
@@ -39,20 +29,18 @@ function formatErrorsForVSCode(string) {
         let severity = value[0].match(/Warning/) ? 'Warning' : 'Error';
         let raw = !coord ? null : Number(coord[0]);
         let position = !coord ? null : Number(coord[1]);
-        let errorLenght = getErrorLenght(value[4]);
-        let source = getErrorFilePath(value.join("\n"));
+        let errorLenght = getErrorLenght(value[4]);       
         return {
-            info: value.join('\n'),
+            info: value[0],
             coord: {
                 raw,
                 position
             },
             errorLenght,
-            severity,
-            source
+            severity           
         }
     })
 }
 module.exports = {
-    formatErrorsForVSCode
+    formatErrors
 }
